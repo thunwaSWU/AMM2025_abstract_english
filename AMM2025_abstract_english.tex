@@ -1,0 +1,100 @@
+%====================================================
+% Abstract Template (ENG)
+% The 29th Annual Meeting in Mathematics (AMM2025)
+% Srinakharinwirot University
+%====================================================
+
+\documentclass[12pt, a4paper]{article}
+\usepackage{geometry,graphicx}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{top=5cm, bottom=2.5cm, left=2.5cm, right=2.5cm, headheight=3cm}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\newenvironment{AMM-abstract}[4][]{
+  \begin{center}
+    { \renewcommand\textsuperscript[1]{}\par}
+    {{\Large\bfseries #2}\par}
+    \medskip
+    {\large #3\par}
+    \bigskip
+    {\small #4\par}
+    \bigskip\bigskip
+    {{\large\bfseries Abstract}\par}
+  \end{center}
+}{ 
+  \bigskip
+  \hrule
+  \bigskip
+}
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+
+\newcommand{\mykeywords}[1]{%
+    \noindent \textbf{Keywords:} #1 \par
+}
+\newcommand{\myMSC}[1]{
+    \noindent \textbf{2020 MSC:} #1 \par
+}
+
+\fancyhead[L]{\footnotesize
+The 29\textsuperscript{th} Annual Meeting in Mathematics (AMM2025)\\
+Department of Mathematics, Faculty of Science,\\
+Srinakharinwirot University,
+Bangkok, Thailand}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% DO NOT make any changes above this line %%%%%
+%%%%%% DO NOT use any customized definitions %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%% INSTRUCTION %%%%%%%%%%%%%%%%%%%%
+% Use the following command to write your abstract:
+%
+% \begin{AMM-abstract}[]
+% {Title}
+% {Authors (use \textsuperscript as institution markers)}
+% {Institutions (use \textsuperscript as institution markers)}
+% Abstract text
+% \end{AMM-abstract}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{AMM-abstract}[]
+{Your Title Goes Here} %TITLE
+{First Author\textsuperscript{1,}\footnote{Speaker (name@email.com)}, Second Author\textsuperscript{1}, and Third Author\textsuperscript{2,}\footnote{(Optional) The author is partially supported by ...}} %AUTHORS
+{\textsuperscript{1}Department of Mathematics, Faculty of Science\\Srinakharinwirot University,
+Bangkok 10110, Thailand\\ \smallskip
+\textsuperscript{2}Department of Mathematics Statistics and Computer, Faculty of Science\\
+Ubon Ratchathani University, Ubon Ratchathani 34190, Thailand} %AFFILIATIONS
+
+%YOUR ABSTRACT GOES HERE
+Write a concise and compelling abstract of no more than 250 words. Your abstract should pique the reader's interest and provide a clear overview of your research.
+To achieve this, structure your abstract as follows:
+
+1) Background: Briefly introduce the broader context of your research and clearly state the specific research question or problem you address.
+ 
+2) Method: Outline the primary methods or techniques used to investigate your research question.
+ 
+3) Result: Summarize the key findings of your study.
+ 
+4) Conclusion: Present the main conclusions or interpretations drawn from your results.
+ 
+Your abstract should accurately reflect the content of your full paper. Avoid making exaggerated claims or introducing results that will not be presented at the conference.
+
+For more information about Mathematics Subject Classification system (2020 MSC), please visit \url{https://mathscinet.ams.org/msnhtml/msc2020.pdf}.
+\end{AMM-abstract}
+
+%%%%%%%%%%%%%%%%% Keywords and MSC %%%%%%%%%%%%%%%%%%%%%%
+
+\mykeywords{keyword1, keyboard2, keyboard3} %Please include 3-5 keywords here. Use comma to separate items in the list.
+\smallskip
+\myMSC{nnXxx, nnXxx, nnXxx} %Please include MSC here. The first item is the primary MSC. Use comma to separate items in the list.
+
+\end{document}
